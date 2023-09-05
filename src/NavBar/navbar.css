@@ -1,0 +1,56 @@
+.nav-main{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.heading{
+    padding-left: 40px;
+    cursor: pointer;
+}
+.track{
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: var(--first-color);
+}
+.btn{
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: var(--first-color);
+    align-items: center;
+    cursor: pointer;
+}
+.nav-main span{
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 500px) {
+    .track{
+        padding-right: 10px;
+        .icon{
+            margin-right: 5px;
+            /* font-size: 25px; */
+        }
+        .btn{
+            width: 5rem;
+
+        }
+    }
+    .track .bidollar {
+        display: none;
+    }
+    .heading{
+        padding-left: 10px;
+    }
+}

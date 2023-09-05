@@ -1,0 +1,63 @@
+/* @import url("https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css"); */
+
+
+.circle{
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    background-color: var(--first-color);
+    color: var(--text-white);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.stepWrapper{
+    display: flex;
+    margin: 55px 0 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stepBlock .circleWrapper{
+    padding: 0 60px;
+}
+
+.stepBlock:not(:last-child) .circleWrapper::after{
+    content: '';
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    top: 150px;
+    background-color: var(--text-color);
+    margin: auto;
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 1000px){
+    .stepBlock .circleWrapper{
+        padding: 0 30px;
+    }
+    .stepBlock:not(:last-child) .circleWrapper::after {
+        content: '';
+        width: 140px;
+        height: 2px;
+        position: absolute;
+        top: 150px;
+        background-color: var(--text-color);
+        margin: auto;
+        z-index: 0;
+    }
+}

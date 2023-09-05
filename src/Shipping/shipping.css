@@ -1,0 +1,481 @@
+.shippinghead {
+    display: flex;
+    padding: 0 150px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.shipingstatus {
+    width: 150px;
+    height: 50px;
+    background-color: var(--text-white);
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.filtermain {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 30px 50px;
+    width: 650px;
+    border-radius: 0.7rem;
+    box-shadow: 1px 3px 3px 2px var(--text-color);
+
+    .section {
+        background-color: var(--text-white);
+        border-radius: 0.7rem;
+        height: 40px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: filter 0.3s, background-color 0.3s;
+
+        &.active {
+            background-color: white;
+            filter: none;
+            scale: 1.1;
+        }
+
+        .sectiontitle {
+            background: transparent;
+            font-size: 13px;
+        }
+
+        &:not(.active) {
+            background-color: var(--container-color);
+            /* filter: blur(2px); */
+        }
+    }
+}
+
+.shippinglower {
+    display: flex;
+}
+
+.shippingcardmain {
+    background-color: white;
+    margin: 10px 50px;
+    border-radius: 0.7rem;
+    height: 130px;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    box-shadow: -5px 5px 15px 3px var(--text-color);
+    /* margin-right: 250px; */
+}
+
+.shipinginfo {
+    background: transparent;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 10px;
+
+    .value {
+        background-color: lightgreen;
+        height: 25px;
+        width: 100px;
+        border-radius: 0.6rem;
+        padding: 5px 5px;
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+
+        /* justify-content: space-evenly; */
+        .valuetitle {
+            background: transparent;
+            padding-left: 5px;
+        }
+
+        .greendot {
+            color: green;
+            font-size: 10px;
+            background: transparent;
+        }
+    }
+
+    .valueeco {
+        background-color: lightblue;
+        height: 25px;
+        width: 100px;
+        border-radius: 0.6rem;
+        padding: 5px 5px;
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+
+        .valuetitle {
+            background: transparent;
+            padding-left: 5px;
+        }
+
+        .greendot {
+            color: blue;
+            font-size: 10px;
+            background: transparent;
+        }
+    }
+
+    .express {
+        background: transparent;
+        color: red;
+    }
+
+    .days {
+        background: transparent;
+        border-left: 2px solid var(--text-color);
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .cartbtn {
+        margin-left: 1rem;
+        background: transparent;
+        color: var(--first-color);
+    }
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    background: transparent;
+
+    .location {
+        color: var(--text-color);
+        background: transparent;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .planeicon {
+        background: transparent;
+        margin: 0 10px;
+        display: inline-flex;
+        align-items: center;
+        color: var(--title-color);
+    }
+
+    .horizontal-line {
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: var(--text-color);
+        margin: 0 5px;
+    }
+
+}
+
+.third {
+    display: flex;
+    background: transparent;
+    align-items: center;
+
+    .company {
+        background: transparent;
+        margin-right: 10px;
+    }
+
+    .rating {
+        width: 100px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--first-color);
+    }
+}
+
+.shippingprice {
+    background-color: transparent;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+
+    .rupee {
+        background: transparent;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+
+    .decimal {
+        font-size: 15px;
+        background: transparent;
+    }
+
+    .button {
+        margin: 0px 20px;
+        width: 120px;
+    }
+
+    .details {
+        background: transparent;
+        text-decoration: underline;
+        color: var(--text-color);
+    }
+}
+
+
+
+/* Filter CSS */
+
+.shippingfiltermain {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 230px;
+    margin-left: 40px;
+    background: transparent;
+}
+
+.filtertitle {
+    background: transparent;
+    /* width: 200px; */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background: transparent;
+    border-radius: 0;
+
+}
+
+.accordionItem {
+    margin-bottom: 20px;
+}
+
+.accordiontitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primaryText {
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+    .shippinghead {
+        padding: 0;
+    }
+
+    .shipingstatus {
+        display: none;
+    }
+
+    .shippinglower {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shippinglower .left .shippingfiltermain {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: max-content;
+        height: max-content;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .filters .accordionmain {
+        display: flex;
+
+        .accordionItem {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+    .filtermain {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        width: fit-content;
+        height: max-content;
+        justify-content: center;
+        margin: 0;
+        box-shadow: none;
+
+        .section {
+            background-color: var(--text-white);
+            border-radius: 0.7rem;
+            height: 40px;
+            width: fit-content;
+            padding: 0 5px;
+            cursor: pointer;
+            transition: filter 0.3s, background-color 0.3s;
+
+            &.active {
+                background-color: white;
+                filter: none;
+                scale: 1.1;
+            }
+    
+            .sectiontitle {
+                background: transparent;
+                font-size: 12px;
+            }
+    
+            &:not(.active) {
+                background-color: var(--container-color);
+                /* filter: blur(2px); */
+            }
+        }
+    }
+
+    .cards{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .shippinghead {
+        display: none;
+    }
+
+    .shippinglower {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        margin: 20px 0;
+
+        .shippingfiltermain {
+            margin: 0;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .filtermain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .shippingcardmain {
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+        .shipinginfo {
+            padding: 10px;
+        }
+
+        .shipinginfo .first .value {
+            margin-right: 10px;
+        }
+
+        .shipinginfo .third {
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .valuetitle {
+            padding: 0;
+        }
+
+        .days {
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+
+        .cartbtn {
+            margin-left: 10px;
+        }
+
+        .shippingprice {
+            padding: 0 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* Define column widths as needed */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .shippingprice .rupee {
+            font-size: 18px;
+            text-align: center;
+            /* Center the text horizontally within its column */
+        }
+
+        .shippingprice .button {
+            margin: 0;
+            width: 80px;
+            font-size: 15px;
+            justify-self: center;
+            /* Center the button within its column */
+        }
+
+        .shippingprice .details {
+            justify-self: center;
+        }
+    }
+
+    .shipinginfo .second .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

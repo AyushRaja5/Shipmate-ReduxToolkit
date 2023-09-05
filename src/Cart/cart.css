@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px){
+    .valuetitle{
+        font-size: 14px;
+    }
+    .cart{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

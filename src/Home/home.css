@@ -1,0 +1,24 @@
+.container{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.bigger-text{
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.textarea span{
+    font-weight: 500;
+    text-align: justify;
+}
